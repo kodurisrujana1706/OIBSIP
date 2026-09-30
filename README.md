@@ -30,11 +30,12 @@ Enter your height in meters: 1.60
 Your BMI: 19.53
 Category: Normal Weight
 
-
-
+```markdown
 ## Technologies Used
 
 - Python
 - VS Code
+
+
 
 
