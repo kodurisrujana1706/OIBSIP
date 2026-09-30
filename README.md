@@ -31,8 +31,10 @@ Your BMI: 19.53
 Category: Normal Weight
 
 
+
 ## Technologies Used
 
-   - Python
-   - VS Code
+- Python
+- VS Code
+
 
