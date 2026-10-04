@@ -1,37 +1,30 @@
-def calculate_bmi():
-    print("================================")
-    print("       BMI CALCULATOR")
-    print("================================")
+print("================================")
+print("       BMI CALCULATOR")
+print("================================")
 
-    while True:
-        try:
-            weight = float(input("Enter your weight in kg: "))
-            height = float(input("Enter your height in meters: "))
+try:
+    weight = float(input("Enter your weight in kg: "))
+    height = float(input("Enter your height in meters: "))
 
-            if weight <= 0 or height <= 0:
-                print("Error: Weight and height must be positive values.")
-                continue
+    if weight <= 0 or height <= 0:
+        print("Error: Weight and height must be positive values.")
+    else:
+        bmi = weight / (height ** 2)
 
-            bmi = weight / (height ** 2)
+        print("--------------------------------")
+        print(f"Your BMI: {bmi:.2f}")
 
-            if bmi < 18.5:
-                category = "Underweight"
-            elif bmi < 25:
-                category = "Normal Weight"
-            elif bmi < 30:
-                category = "Overweight"
-            else:
-                category = "Obese"
+        if bmi < 18.5:
+            category = "Underweight"
+        elif bmi < 25:
+            category = "Normal Weight"
+        elif bmi < 30:
+            category = "Overweight"
+        else:
+            category = "Obese"
 
-            print("\n--------------------------------")
-            print(f"Your BMI: {bmi:.2f}")
-            print(f"Category: {category}")
-            print("--------------------------------")
+        print(f"Category: {category}")
+        print("--------------------------------")
 
-            break
-
-        except ValueError:
-            print("Error: Please enter valid numeric values.")
-
-
-calculate_bmi()
+except ValueError:
+    print("Error: Please enter numbers only.")
